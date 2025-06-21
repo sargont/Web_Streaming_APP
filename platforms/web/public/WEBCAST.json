@@ -1,0 +1,49 @@
+{
+  "id": "WEBCAST",
+  "siteName": "WEBCAST",
+  "description": "JW webcast configuration example",
+  "player": "9ycau6FD",
+  "custom": { "playerLibraryUrl": "https://cdn.jwplayer.com/libraries/9ycau6FD.js" },
+  "menu": [
+    { "label": "Playlist 1", "contentId": "mzn2oX3p", "type": "playlist" },
+    { "label": "Playlist 2", "contentId": "zs2OUglZ", "type": "playlist" },
+    { "label": "Playlist 3", "contentId": "1PC9GvWT", "type": "playlist" },
+    { "label": "Playlist 4", "contentId": "nqIWJq6f", "type": "playlist" },
+    { "label": "Playlist 5", "contentId": "GSmD5HuO", "type": "playlist" },
+    { "label": "Playlist 6", "contentId": "owSrVMru", "type": "playlist" },
+    { "label": "Playlist 7", "contentId": "NOdbTdaJ", "type": "playlist" },
+    { "label": "Playlist 8", "contentId": "TKi7Q6z7", "type": "playlist" },
+    { "label": "Playlist 9", "contentId": "dP5Xo3lY", "type": "playlist" },
+    { "label": "Video 1", "contentId": "QUiTgTUJ", "type": "media" },
+    { "label": "Video 2", "contentId": "Z5DufAID", "type": "media" },
+    { "label": "Video 3", "contentId": "7bTHaFOQ", "type": "media" },
+    { "label": "Video 4", "contentId": "DtyPwz7f", "type": "media" },
+    { "label": "Video 5", "contentId": "C5lQ6HB6", "type": "media" },
+    { "label": "Video 6", "contentId": "VGr0krkQ", "type": "media" },
+    { "label": "Video 7", "contentId": "LQ4rfNmp", "type": "media" },
+    { "label": "Video 8", "contentId": "4TxdxE1V", "type": "media" },
+    { "label": "Video 9", "contentId": "kaxnWtsc", "type": "media" },
+    { "label": "Video 10", "contentId": "SvWpFdyu", "type": "media" },
+    { "label": "Video 11", "contentId": "SEHq7e82", "type": "media" },
+    { "label": "Video 12", "contentId": "2581dfcH", "type": "media" },
+    { "label": "Video 13", "contentId": "uzTTMURj", "type": "media" },
+    { "label": "Video 14", "contentId": "lu8R4HcZ", "type": "media" }
+  ],
+  "content": [
+    { "contentId": "mzn2oX3p", "featured": true, "type": "playlist" },
+    { "contentId": "zs2OUglZ", "type": "playlist" },
+    { "contentId": "1PC9GvWT", "type": "playlist" },
+    { "contentId": "nqIWJq6f", "type": "playlist" },
+    { "contentId": "GSmD5HuO", "type": "playlist" },
+    { "contentId": "owSrVMru", "type": "playlist" },
+    { "contentId": "NOdbTdaJ", "type": "playlist" },
+    { "contentId": "TKi7Q6z7", "type": "playlist" },
+    { "contentId": "dP5Xo3lY", "type": "playlist" }
+  ],
+  "features": {
+    "recommendationsPlaylist": "mzn2oX3p",
+    "searchPlaylist": "zs2OUglZ",
+    "favoritesList": "1PC9GvWT",
+    "continueWatchingList": "nqIWJq6f"
+  }
+}
