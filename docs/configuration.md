@@ -5,6 +5,13 @@ the [JWP Delivery API](https://docs.jwplayer.com/platform/reference/get_apps-con
 The easiest way to maintain configuration files is to use the 'Apps' section in
 your [JWP Dashboard account](https://dashboard.jwplayer.com/).
 
+An example configuration file can be found in
+[`docs/examples/custom-config.json`](examples/custom-config.json). It lists a
+minimal set of playlists that you can replace with your own IDs.
+
+For the playlists to display your media only, make sure each playlist contains
+just the media IDs you want to show.
+
 > See the [web configuration documentation](../platforms/web/docs/web-configuration.md) for configuring the OTT Web App.
 
 ## Available Configuration Parameters
