@@ -14,7 +14,7 @@ If a file doesn't exist in /ini/.webapp.<mode>.ini, then the template file will 
 The 8 character ID (or the url path) of the app config from your JWP account that the web app will use to load its content. Be careful to ensure that this config is always available or your app will fail to load.
 
 This value can alternatively be provided at compile time via the [APP_DEFAULT_CONFIG_SOURCE](build-from-source.md#app_default_config_source) environment variable if you are doing your own builds.
-Keep in mind, if the `deafultConfigSource` ini setting is provided, it will be used even if the [APP_DEFAULT_CONFIG_SOURCE](build-from-source.md#app_default_config_source) environment variable is set.
+Keep in mind, if the `defaultConfigSource` ini setting is provided, it will be used even if the [APP_DEFAULT_CONFIG_SOURCE](build-from-source.md#app_default_config_source) environment variable is set.
 
 > Note: you probably always want to include a default config source for any production deployment. If there are no valid config sources the application will throw an error at startup.
 
