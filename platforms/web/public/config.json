@@ -1,0 +1,30 @@
+{
+  "menu": [
+    { "label": "Playlist 1", "contentId": "mzn2oX3p", "type": "playlist" },
+    { "label": "Playlist 2", "contentId": "zs2OUglZ", "type": "playlist" },
+    { "label": "Playlist 3", "contentId": "1PC9GvWT", "type": "playlist" },
+    { "label": "Playlist 4", "contentId": "nqIWJq6f", "type": "playlist" },
+    { "label": "Playlist 5", "contentId": "GSmD5HuO", "type": "playlist" },
+    { "label": "Playlist 6", "contentId": "owSrVMru", "type": "playlist" },
+    { "label": "Playlist 7", "contentId": "NOdbTdaJ", "type": "playlist" },
+    { "label": "Playlist 8", "contentId": "TKi7Q6z7", "type": "playlist" },
+    { "label": "Playlist 9", "contentId": "dP5Xo3lY", "type": "playlist" }
+  ],
+  "content": [
+    { "contentId": "mzn2oX3p", "featured": true, "type": "playlist" },
+    { "contentId": "zs2OUglZ", "type": "playlist" },
+    { "contentId": "1PC9GvWT", "type": "playlist" },
+    { "contentId": "nqIWJq6f", "type": "playlist" },
+    { "contentId": "GSmD5HuO", "type": "playlist" },
+    { "contentId": "owSrVMru", "type": "playlist" },
+    { "contentId": "NOdbTdaJ", "type": "playlist" },
+    { "contentId": "TKi7Q6z7", "type": "playlist" },
+    { "contentId": "dP5Xo3lY", "type": "playlist" }
+  ],
+  "features": {
+    "recommendationsPlaylist": "mzn2oX3p",
+    "searchPlaylist": "zs2OUglZ",
+    "favoritesList": "1PC9GvWT",
+    "continueWatchingList": "nqIWJq6f"
+  }
+}
