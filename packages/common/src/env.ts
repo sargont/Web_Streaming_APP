@@ -28,9 +28,10 @@ const env: Env = {
   APP_VERSION: '',
   APP_API_BASE_URL: 'https://cdn.jwplayer.com',
   APP_API_ACCESS_BRIDGE_URL: '',
-  APP_PLAYER_ID: 'M4qoGvUk',
+  APP_PLAYER_ID: '9ycau6FD',
   APP_FOOTER_TEXT: '',
   APP_DEFAULT_LANGUAGE: 'en',
+  APP_DEFAULT_CONFIG_SOURCE: '/config.json',
   APP_PUBLIC_URL: '',
   APP_GTM_LOAD_ON_ACCEPT: false,
 };

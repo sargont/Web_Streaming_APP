@@ -9,6 +9,12 @@ An example configuration file can be found in
 [`docs/examples/custom-config.json`](examples/custom-config.json). It lists a
 minimal set of playlists that you can replace with your own IDs.
 
+
+To use this example locally, copy it to
+`platforms/web/public/config.json` and set `defaultConfigSource = /config.json`
+in `.webapp.dev.ini` (and `.webapp.prod.ini` when building for production).
+
+
 For the playlists to display your media only, make sure each playlist contains
 just the media IDs you want to show.
 
@@ -52,12 +58,12 @@ Use the `menu` array to define the links that are visible in the header and menu
 {
   "menu": [{
     "label": "Movies",
-    "contentId": "lrYLc95e",
-    "filterTags": "Action,Comedy,Drama"
+    "contentId": "mzn2oX3p",
+    "filterTags": "Action,Comedy,Drama",
     "type": "playlist"
   }, {
     "label": "Series",
-    "contentId": "lrYLc95e"
+    "contentId": "zs2OUglZ",
     "type": "playlist"
   }]
 }
@@ -93,14 +99,14 @@ each shelf separately.
 ```
 {
   content: [{
-    "contentId": "lrYLc95e",
-    "featured": true
+    "contentId": "mzn2oX3p",
+    "featured": true,
     "type": "playlist"
   }, {
     "type": "favorites",
-    "title": "Best videos",
+    "title": "Best videos"
   }, {
-    "contentId": "WXu7kuaW"
+    "contentId": "1PC9GvWT",
     "type": "playlist"
   }]
 }
@@ -205,8 +211,8 @@ Use the `features` object to define extra properties for your app.
 ```
 {
   "features": {
-    "recommendationsPlaylist": "IHBjjkSN",
-    "searchPlaylist": "D4soEviP"
+    "recommendationsPlaylist": "mzn2oX3p",
+    "searchPlaylist": "zs2OUglZ"
 }
 ```
 
