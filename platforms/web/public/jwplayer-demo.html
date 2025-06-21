@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JW Player Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jwplayer.com/libraries/9ycau6FD.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #player-container {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    #metadata {
+      text-align: center;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JW Player Demo</h1>
+  <label for="content-select">Choose content:</label>
+  <select id="content-select">
+    <optgroup label="Playlists">
+      <option value="playlist:mzn2oX3p">Webcast Site</option>
+      <option value="playlist:zs2OUgIZ">WebCast Player</option>
+      <option value="playlist:1PC9GvWT">Untitled dynamic playlist</option>
+      <option value="playlist:nqlWJq6f">Radio</option>
+      <option value="playlist:GSmD5HuO">Product Knowledge</option>
+      <option value="playlist:owSrVMru">All Content</option>
+      <option value="playlist:NOdbTdAJ">Border Gates</option>
+      <option value="playlist:TKi7Q6z7">Roads</option>
+      <option value="playlist:dP5Xo3lY">Default Recommendations Playlist</option>
+    </optgroup>
+    <optgroup label="Media">
+      <option value="media:QUiTgTUJ">Baso200 Campaign</option>
+      <option value="media:KHIHYTb1">Apica - 2022</option>
+      <option value="media:Z5DufAID">Self Service</option>
+      <option value="media:7bThaFOQ">Unlimited Wifi</option>
+      <option value="media:DtyPwz7f">Carlton Centre, Maseru</option>
+      <option value="media:C5IQ6HB6">Downtown Kingsway, Maseru</option>
+      <option value="media:VGr0krkQ">Radio Lesotho</option>
+      <option value="media:LQ4rfNmp">Ultimate Radio Lesotho</option>
+      <option value="media:4TxdxE1V">Van Rooyen's Gate, Mafeteng</option>
+      <option value="media:kaxnWtsc">Main Circle, Maseru</option>
+      <option value="media:SvWpFdyu">Border Post, Maputsoe</option>
+      <option value="media:SEHq7e82">Border Post, Maseru</option>
+      <option value="media:2581dfcH">Lakeside, Maseru</option>
+      <option value="media:uzTTMURj">Lekhaloaneng, Maseru</option>
+      <option value="media:lu8R4HcZ">Hillsview, Maseru</option>
+    </optgroup>
+  </select>
+
+  <div id="player-container">
+    <div id="jwplayer"></div>
+    <div id="metadata"></div>
+  </div>
+
+  <script>
+    const player = jwplayer("jwplayer");
+
+    function loadContent(value) {
+      const [type, id] = value.split(":");
+      const setupOptions = {
+        width: "100%",
+        aspectratio: "16:9",
+      };
+      if (type === "playlist") {
+        setupOptions.playlist = `https://cdn.jwplayer.com/v2/playlists/${id}`;
+      } else {
+        setupOptions.file = `https://cdn.jwplayer.com/videos/${id}.mp4`;
+        setupOptions.image = `https://cdn.jwplayer.com/thumbs/${id}.jpg`;
+      }
+      player.setup(setupOptions);
+    }
+
+    document.getElementById("content-select").addEventListener("change", (e) => {
+      loadContent(e.target.value);
+    });
+
+    player.on("playlistItem", function(item) {
+      const duration = item.duration ? Math.round(item.duration) + "s" : "";
+      const text = item.title ? `${item.title} ${duration}` : duration;
+      document.getElementById("metadata").textContent = text;
+    });
+
+    // Load the first option by default
+    loadContent(document.getElementById("content-select").value);
+  </script>
+</body>
+</html>
