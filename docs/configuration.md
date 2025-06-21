@@ -9,9 +9,11 @@ An example configuration file can be found in
 [`docs/examples/custom-config.json`](examples/custom-config.json). It lists a
 minimal set of playlists that you can replace with your own IDs.
 
+
 To use this example locally, copy it to
 `platforms/web/public/config.json` and set `defaultConfigSource = /config.json`
 in `.webapp.dev.ini` (and `.webapp.prod.ini` when building for production).
+
 
 For the playlists to display your media only, make sure each playlist contains
 just the media IDs you want to show.
