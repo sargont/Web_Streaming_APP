@@ -4,6 +4,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import ErrorPage from '@jwp/ott-ui-react/src/components/ErrorPage/ErrorPage';
 import RootErrorPage from '@jwp/ott-ui-react/src/components/RootErrorPage/RootErrorPage';
 import About from '@jwp/ott-ui-react/src/pages/About/About';
+import JwPlayerDemo from '@jwp/ott-ui-react/src/pages/JwPlayerDemo/JwPlayerDemo';
 import Home from '@jwp/ott-ui-react/src/pages/Home/Home';
 import Search from '@jwp/ott-ui-react/src/pages/Search/Search';
 import User from '@jwp/ott-ui-react/src/pages/User/User';
@@ -15,6 +16,7 @@ import {
   PATH_ABOUT,
   PATH_CONTENT_LIST,
   PATH_LEGACY_SERIES,
+  PATH_JWPLAYER_DEMO,
   PATH_MEDIA,
   PATH_PLAYLIST,
   PATH_SEARCH,
@@ -49,6 +51,7 @@ export default function AppRoutes() {
             <Route path={RELATIVE_PATH_USER_PAYMENTS} element={<PaymentsSection />} />
             <Route path="*" element={<Navigate to={RELATIVE_PATH_USER_ACCOUNT} />} />
           </Route>
+          <Route path={PATH_JWPLAYER_DEMO} element={<JwPlayerDemo />} />
           <Route path={PATH_ABOUT} element={<About />} />
           <Route
             path="/*"

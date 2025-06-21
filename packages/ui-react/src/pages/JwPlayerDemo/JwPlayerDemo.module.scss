@@ -1,0 +1,12 @@
+@use '@jwp/ott-ui-react/src/styles/variables';
+
+.playerContainer {
+  max-width: 800px;
+  margin: 24px auto;
+}
+
+.metadata {
+  text-align: center;
+  margin-top: 8px;
+  color: variables.$white;
+}

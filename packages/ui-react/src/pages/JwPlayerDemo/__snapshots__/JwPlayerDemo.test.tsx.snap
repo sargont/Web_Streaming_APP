@@ -1,0 +1,161 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<JwPlayerDemo> > renders and matches snapshot 1`] = `
+<div>
+  <div>
+    <h1>
+      JW Player Demo
+    </h1>
+    <label
+      for="content-select"
+    >
+      Choose content:
+    </label>
+     
+    <select
+      id="content-select"
+    >
+      <optgroup
+        label="Playlists"
+      >
+        <option
+          value="playlist:mzn2oX3p"
+        >
+          Webcast Site
+        </option>
+        <option
+          value="playlist:zs2OUgIZ"
+        >
+          WebCast Player
+        </option>
+        <option
+          value="playlist:1PC9GvWT"
+        >
+          Untitled dynamic playlist
+        </option>
+        <option
+          value="playlist:nqlWJq6f"
+        >
+          Radio
+        </option>
+        <option
+          value="playlist:GSmD5HuO"
+        >
+          Product Knowledge
+        </option>
+        <option
+          value="playlist:owSrVMru"
+        >
+          All Content
+        </option>
+        <option
+          value="playlist:NOdbTdAJ"
+        >
+          Border Gates
+        </option>
+        <option
+          value="playlist:TKi7Q6z7"
+        >
+          Roads
+        </option>
+        <option
+          value="playlist:dP5Xo3lY"
+        >
+          Default Recommendations Playlist
+        </option>
+      </optgroup>
+      <optgroup
+        label="Media"
+      >
+        <option
+          value="media:QUiTgTUJ"
+        >
+          Baso200 Campaign
+        </option>
+        <option
+          value="media:KHIHYTb1"
+        >
+          Apica - 2022
+        </option>
+        <option
+          value="media:Z5DufAID"
+        >
+          Self Service
+        </option>
+        <option
+          value="media:7bThaFOQ"
+        >
+          Unlimited Wifi
+        </option>
+        <option
+          value="media:DtyPwz7f"
+        >
+          Carlton Centre, Maseru
+        </option>
+        <option
+          value="media:C5IQ6HB6"
+        >
+          Downtown Kingsway, Maseru
+        </option>
+        <option
+          value="media:VGr0krkQ"
+        >
+          Radio Lesotho
+        </option>
+        <option
+          value="media:LQ4rfNmp"
+        >
+          Ultimate Radio Lesotho
+        </option>
+        <option
+          value="media:4TxdxE1V"
+        >
+          Van Rooyen's Gate, Mafeteng
+        </option>
+        <option
+          value="media:kaxnWtsc"
+        >
+          Main Circle, Maseru
+        </option>
+        <option
+          value="media:SvWpFdyu"
+        >
+          Border Post, Maputsoe
+        </option>
+        <option
+          value="media:SEHq7e82"
+        >
+          Border Post, Maseru
+        </option>
+        <option
+          value="media:2581dfcH"
+        >
+          Lakeside, Maseru
+        </option>
+        <option
+          value="media:uzTTMURj"
+        >
+          Lekhaloaneng, Maseru
+        </option>
+        <option
+          value="media:lu8R4HcZ"
+        >
+          Hillsview, Maseru
+        </option>
+      </optgroup>
+    </select>
+    <div
+      class="_playerContainer_e2c4af"
+      id="playerContainer"
+    >
+      <div
+        id="jwplayer"
+      />
+      <div
+        class="_metadata_e2c4af"
+        id="metadata"
+      />
+    </div>
+  </div>
+</div>
+`;

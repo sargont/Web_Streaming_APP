@@ -8,6 +8,8 @@ export const PATH_LEGACY_SERIES = '/s/:id/*';
 export const PATH_SEARCH = '/q/*';
 export const PATH_ABOUT = '/o/about';
 
+export const PATH_JWPLAYER_DEMO = '/jwplayer-demo';
+
 export const PATH_USER_BASE = '/u';
 export const PATH_USER = `${PATH_USER_BASE}/*`;
 
